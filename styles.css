@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(96, 112, 234, 0.723);
+    display: grid;
+    grid-template: minmax(100px, 250px) 1fr / 1fr 4fr 4fr 1fr;
+}
+
+.title {
+    grid-area: 1 / 1 / 2 / 5;
+    font-family: cursive;
+    font-size: 3rem;
+    font-weight: 850;
+    text-align: center;
+}
+
+.to-do-container {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 2px solid red;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-right: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-weight: 250;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tasks-container {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    font-weight: 250;
+    border: 2px solid rgb(19, 73, 13);
+    background-color: rgba(179, 172, 172, 0.967);
+    padding: 10px;
+    margin-left: 25px;
+    gap: 10px;
+}
+
+.tasks-header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 40px 0 40px 0;
+    padding: 15px;
+    background-color: rgb(207, 232, 23);
+}
+
+.active-list-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tasks-remaining {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 150;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+button.create-new-to-do,
+button.create-new-task {
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 15px;
+}
+
+button.delete-completed-task,
+button.delete-task-list {
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+button:hover, .tasks-list label:hover,
+.tasks-list input:hover, .to-do-list li:hover {
+    cursor: pointer;
+}
+
+.lists-title {
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.to-do.active {
+    font-weight: 600;
+    color: blue;
+}

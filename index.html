@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="title">
+            <h1>MY TO DO LISTS</h1>
+        </div>
+
+        <div class="to-do-container">
+            <h3 class="lists-title">MY TO-DO's</h3>
+            <ul class="to-do-list">
+            
+            </ul>
+            <form action="" class="new-to-do-form">
+                <label for="new-to-do-input">New To-Do</label>
+                <input 
+                    type="text"
+                    class="new-to-do-input"
+                    id="new-to-do-input"
+                    placeholder="Enter To-Do Here"
+                />
+                <button type="submit" class="create-new-to-do">CREATE</button>
+            </form>        
+        </div>
+            
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <div class="active-list-title">Make New Page</div>
+                <div class="tasks-remaining">3 Tasks Remaining</div>
+            </div>
+            <ul class="tasks-list">
+                
+            </ul>
+            <form action="" class="new-task-form">
+                <label for="new-task-input">New Task</label>
+                <input 
+                    type="text"
+                    class="new-task-input"
+                    id="new-task-input"
+                    placeholder="Enter Task Here"
+                />
+                <button type="submit" class="create-new-task">CREATE</button>
+            </form>
+            <div class="delete-task-container">
+                <button type="button" class="delete-completed-task">Delete Complated Tasks</button>
+                <button type="button" class="delete-task-list">Delete Task List</button>
+            </div>           
+        </div>  
+        
+    </div>    
+</body>
+</html>
